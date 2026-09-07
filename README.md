@@ -1,1 +1,1 @@
-# practical1
+# web technology
