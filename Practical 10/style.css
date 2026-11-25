@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+}
+
+header {
+    padding: 24px 16px;
+    text-align: center;
+    color: white;
+    background: #12325b;
+}
+
+header h1 {
+    margin: 0 0 8px;
+}
+
+header p {
+    margin: 0;
+}
+
+.container {
+    width: min(92%, 650px);
+    margin: 28px auto;
+}
+
+.card {
+    padding: 24px;
+    margin-bottom: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+h2, h3 {
+    margin-top: 0;
+}
+
+.tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 22px;
+}
+
+button {
+    border: 0;
+    border-radius: 5px;
+    padding: 11px 16px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.tabs button {
+    flex: 1;
+    background: #e2e8f0;
+    color: #1e293b;
+}
+
+.tabs button.active {
+    background: #12325b;
+    color: white;
+}
+
+label {
+    display: block;
+    margin: 14px 0 6px;
+    font-weight: bold;
+}
+
+input, textarea {
+    display: block;
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #cbd5e1;
+    border-radius: 5px;
+    font: inherit;
+}
+
+input:focus, textarea:focus {
+    outline: 2px solid #93c5fd;
+    border-color: #2563eb;
+}
+
+.primary {
+    width: 100%;
+    margin-top: 18px;
+    background: #1763ad;
+    color: white;
+}
+
+.primary:hover {
+    background: #124b85;
+}
+
+.danger {
+    margin-top: 20px;
+    background: #b91c1c;
+    color: white;
+}
+
+.hint {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #64748b;
+}
+
+.message {
+    font-weight: bold;
+    overflow-wrap: anywhere;
+}
+
+.output {
+    margin-top: 14px;
+    padding: 12px;
+    background: #f1f5f9;
+    border-radius: 5px;
+}
+
+#commentOutput {
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+}
+
+footer {
+    padding: 16px;
+    text-align: center;
+    color: #64748b;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+@media (max-width: 480px) {
+    .card {
+        padding: 17px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+}
+Displaying style.css.

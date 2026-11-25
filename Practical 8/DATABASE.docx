@@ -1,0 +1,17 @@
+CREATE DATABASE techmart;
+USE techmart;
+CREATE TABLE products (
+id INT AUTO_INCREMENT PRIMARY KEY,
+name VARCHAR(100) NOT NULL,
+category VARCHAR(50) NOT NULL,
+price DECIMAL(10,2) NOT NULL,
+quantity INT NOT NULL,
+description VARCHAR(255)
+);
+Insert Sample Records
+INSERT INTO products
+(name, category, price, quantity, description)
+VALUES
+(&#39;Laptop&#39;, &#39;Computer&#39;, 55000, 10, &#39;Core i5 Laptop&#39;),
+(&#39;Smartphone&#39;, &#39;Mobile&#39;, 25000, 15, &#39;5G Smartphone&#39;),
+(&#39;Keyboard&#39;, &#39;Accessories&#39;, 1200, 25, &#39;Wireless Keyboard&#39;);

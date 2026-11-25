@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinSecure Employee Portal</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>FinSecure Solutions</h1>
+        <p>Secure Employee Management Portal</p>
+    </header>
+
+    <main class="container">
+        <section class="card" id="authSection">
+            <div class="tabs">
+                <button type="button" id="showRegister" class="active">
+                    Register
+                </button>
+                <button type="button" id="showLogin">
+                    Login
+                </button>
+            </div>
+
+            <form id="registerForm">
+                <h2>Create Account</h2>
+
+                <label for="registerUsername">Username</label>
+                <input
+                    id="registerUsername"
+                    type="text"
+                    minlength="3"
+                    maxlength="30"
+                    autocomplete="username"
+                    placeholder="employee_01"
+                    required
+                >
+
+                <label for="registerPassword">Password</label>
+                <input
+                    id="registerPassword"
+                    type="password"
+                    minlength="8"
+                    maxlength="128"
+                    autocomplete="new-password"
+                    placeholder="Enter a strong password"
+                    required
+                >
+
+                <label for="confirmPassword">Confirm Password</label>
+                <input
+                    id="confirmPassword"
+                    type="password"
+                    autocomplete="new-password"
+                    placeholder="Re-enter your password"
+                    required
+                >
+
+                <p class="hint">
+                    Minimum 8 characters: uppercase, lowercase, number
+                    and special character.
+                </p>
+
+                <button class="primary" type="submit">Register</button>
+                <p id="registerMessage" class="message" role="status"></p>
+            </form>
+
+            <form id="loginForm" hidden>
+                <h2>Employee Login</h2>
+
+                <label for="loginUsername">Username</label>
+                <input
+                    id="loginUsername"
+                    type="text"
+                    autocomplete="username"
+                    required
+                >
+
+                <label for="loginPassword">Password</label>
+                <input
+                    id="loginPassword"
+                    type="password"
+                    autocomplete="current-password"
+                    required
+                >
+
+                <button class="primary" type="submit">Login</button>
+                <p id="loginMessage" class="message" role="status"></p>
+            </form>
+        </section>
+
+        <section class="card" id="dashboardSection" hidden>
+            <h2>Employee Dashboard</h2>
+            <p id="welcomeMessage"></p>
+
+            <h3>XSS Safety Demonstration</h3>
+            <p>
+                Enter HTML-like text below. The application should display
+                it as text rather than execute it.
+            </p>
+
+            <form id="commentForm">
+                <label for="comment">Test input</label>
+                <textarea
+                    id="comment"
+                    rows="3"
+                    maxlength="500"
+                    placeholder="Enter a comment or HTML-like text"
+                    required
+                ></textarea>
+
+                <button class="primary" type="submit">Submit Test</button>
+            </form>
+
+            <p id="commentMessage" class="message" role="status"></p>
+
+            <div class="output">
+                <strong>Safe output:</strong>
+                <p id="commentOutput"></p>
+            </div>
+
+            <button type="button" id="logoutButton" class="danger">
+                Logout
+            </button>
+        </section>
+
+        <section class="card">
+            <h2>Security Features</h2>
+            <ul>
+                <li>Server-side input validation</li>
+                <li>Parameterized database queries</li>
+                <li>Salted password hashing</li>
+                <li>Session-based authentication</li>
+                <li>Protected dashboard</li>
+                <li>Safe text rendering against XSS</li>
+                <li>Defensive error handling</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        Practical 10 | Web Technology Framework
+    </footer>
+</body>
+</html>
+Displaying index.html.
